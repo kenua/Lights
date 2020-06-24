@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="PEPE">
+   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;900&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="styles.css">
+   <title>Lights</title>
+</head>
+<body>
+   
+   <div class="lights-container">
+      <!--
+      <div class="light" style="background-color: #e74c3c"></div>
+      <div class="light" style="background-color: #e67e22"></div>
+      <div class="light" style="background-color: #f1c40f"></div>
+      <div class="light" style="background-color: #2ecc71"></div>
+      <div class="light" style="background-color: #3498db"></div>
+      <div class="light" style="background-color: #2980b9"></div>
+      <div class="light" style="background-color: #8e44ad"></div>
+      -->
+   </div>
+
+   <div class="controls">
+      <h2 class="controls-text-format controls__h2">Controls</h2>
+
+      <div class="controls__content">
+         <div class="controls__item">
+            <div class="switch-button">
+               <div id="toggle-power-button" class="switch-button__content">
+                  <div class="switch-button__ball"></div>
+               </div>
+               <span id="switch-button-text" class="controls-text-format">OFF</span>
+            </div>
+         </div>
+
+         <div class="controls__item">
+            <label for="timing-control" class="item__label controls-text-format">Timing</label>
+            <select name="timing" id="timing-control">
+               <option value="200">0.2</option>
+               <option value="500">0.5</option>
+               <option value="1000" selected>1</option>
+               <option value="1500">1.5</option>
+               <option value="2000">2</option>
+            </select>
+         </div>
+
+         <div class="controls__item">
+            <label for="num-of-lights" class="item__label controls-text-format">Number of lights <span class="small-text">(from 2 to 7)</span></label>
+            <input id="num-of-lights" class="controls__lights-number" type="text" value="0" title="Set new number of lights (min: 2 | max: 7)">
+         </div>
+      </div>
+   </div><!--.controls-->
+
+   <script src="lights.js"></script>
+</body>
+</html>
